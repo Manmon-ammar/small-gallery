@@ -1,0 +1,43 @@
+figure{
+    overflow: hidden;
+    cursor: pointer;
+}
+figcaption{
+    bottom: 0px;
+    width: calc(100% - 20px);
+    left: 10px;
+    background-color: white;
+    transform: translateY(100%);
+    transition: transform 500ms ease-in-out;
+}
+figure:hover figcaption{
+    transform: translateY(-10%);
+}
+.model{
+    background-color: rgba(0,0,0,0.6);
+    cursor: pointer;
+}
+.slider{
+    width: 700px;
+    aspect-ratio: 4/1;
+    object-fit: cover;
+}
+i{
+    font-size: 24px;
+    position: absolute;
+}
+.fa-circle-arrow-left , .fa-circle-arrow-right{
+    transform: translateY(-50%);
+}
+.fa-circle-arrow-left{
+   top: 50%;
+   left: 10px;
+}
+.fa-circle-xmark{
+    top: 10px;
+    right: 10px;
+}
+.fa-circle-arrow-right{
+    top: 50%;
+    right: 10px;
+}
